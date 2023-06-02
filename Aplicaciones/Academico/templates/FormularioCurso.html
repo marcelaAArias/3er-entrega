@@ -1,0 +1,17 @@
+
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+   <form action="{% url 'FormularioCurso' %}" method="GET" >{% csrf_token %}
+
+      <p>nombre: <input type="text" name="nombre"></p>
+
+      <p>codigo: <input type="number" name="codigo"></p>
+
+      <button type="submit"> Enviar </button>
+
+   </form>
+
+{% endblock contenidoQueCambia %}

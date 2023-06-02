@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<p>Estamos buscando: {{Curso}}</p>
+
+<ul>
+{% for n in nombre %}
+    <li> {{n.nombre}} - {{n.codigo}}</li>
+{% endfor %}   
+</ul>
+
+
+{% endblock %}       
